@@ -1,6 +1,6 @@
 module.exports = {
   dbName: "test-db",
   type: "postgresql",
-  entities: ["./lib"],
+  entities: ["./lib/src"],
   entitiesTs: ["./src"],
 };
