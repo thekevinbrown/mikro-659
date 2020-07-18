@@ -6,7 +6,8 @@
   "license": "UNLICENSED",
   "scripts": {
     "build": "tsc --build && yarn mikro:build",
-    "mikro:build": "mikro-orm cache:generate"
+    "mikro:build": "ts-node src/index",
+    "start": "yarn build"
   },
   "main": "lib/index.js",
   "directories": {
@@ -21,6 +22,7 @@
   },
   "devDependencies": {
     "@mikro-orm/cli": "4.0.0-alpha.5",
+    "@mikro-orm/reflection": "4.0.0-alpha.5",
     "@types/node": "14.0.23",
     "ts-node": "8.10.2",
     "typescript": "3.9.5"
